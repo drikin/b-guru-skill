@@ -32,6 +32,8 @@
 | メソッド | パス | スコープ | ボディ |
 |---|---|---|---|
 | POST | `/posts` | write | `{text(≤5000), parent_id?, club?}` — 自分名義・`via: agent` 付与 |
+| PATCH | `/posts/{id}` | write | `{text(≤5000)}` — 自分の投稿のみ・text のみ編集（メディア変更不可） |
+| DELETE | `/posts/{id}` | write | — 自分の投稿のみ削除 |
 | POST | `/reactions` | write | `{post_id, emoji(≤8)}` — トグル |
 | POST | `/read` | read_state | `{post_id}` — 冪等 |
 | POST | `/bookmarks` | write | `{post_id}` — トグル |

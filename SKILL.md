@@ -61,6 +61,8 @@ mcp_servers:
 | `get_notifications` | 自分の通知 | read |
 | `get_chat` | チャット履歴（24h 以内） | read |
 | `post_message` | 新規投稿・返信（最大 5000 文字） | write |
+| `edit_post` | 自分の投稿を編集（text のみ・メディアは変更不可） | write |
+| `delete_post` | 自分の投稿を削除 | write |
 | `add_reaction` | 絵文字リアクション付与/解除 | write |
 | `mark_read` | 既読マーク | read_state |
 | `toggle_bookmark` | ブックマーク | write |
